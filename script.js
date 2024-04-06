@@ -1,7 +1,7 @@
-// Initialize Typed.js for typing animation
+// Typed.js Initialization
 var typed = new Typed('#typed', {
-    strings: ["Freelancer", "Developer", "Designer"],
+    strings: ["Web Developer", "Graphic Designer", "UI/UX Designer"],
     typeSpeed: 100,
-    backSpeed: 100,
+    backSpeed: 50,
     loop: true
 });
