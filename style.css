@@ -1,8 +1,25 @@
+/* Tambahkan animasi fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tambahkan kelas untuk menerapkan animasi */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
 /* Custom CSS Styles */
 
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
@@ -19,7 +36,7 @@ body {
 }
 
 .section {
-    padding-top: 90px;
+    padding-top: 150px; /* Menambahkan ruang di bawah navbar */
 }
 
 /* Heading Styles */
@@ -28,32 +45,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5rem; /* Ukuran font untuk h1 */
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2rem; /* Ukuran font untuk h2 */
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem; /* Ukuran font untuk h3 */
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.25rem; /* Ukuran font untuk h4 */
+    font-size: 1.25rem;
 }
 
 h5 {
-    font-size: 1rem; /* Ukuran font untuk h5 */
+    font-size: 1rem;
 }
 
 h6 {
-    font-size: 0.875rem; /* Ukuran font untuk h6 */
+    font-size: 0.875rem;
 }
 
 /* Text Styles */
 p, .lead, .card-text {
-    font-size: 1rem; /* Ukuran font untuk paragraf */
+    font-size: 1rem;
 }
 
 /* Mobile Responsive */
@@ -66,7 +83,19 @@ p, .lead, .card-text {
 /* CSS */
 .contact-label {
     display: inline-block;
-    width: 120px; /* Sesuaikan lebar sesuai kebutuhan */
+    width: 120px;
     font-weight: bold;
 }
 
+#contact {
+    padding-bottom: 50px; /* Menambahkan jarak antara Contact Section dan Footer */
+}
+
+#introduction {
+    padding-bottom: 5px;
+}
+
+.card:hover {
+    background-color: #f8f9fa; /* Mengubah warna latar belakang saat kursor berada di atas kotak */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk membuat kotak lebih menonjol */
+}
